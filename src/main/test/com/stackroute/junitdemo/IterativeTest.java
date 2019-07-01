@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class IterativeTest {
-    Iterative it=new Iterative();
+    Iterative iterative=new Iterative();
 
     @Before
     public void setUp() throws Exception {
@@ -20,7 +20,7 @@ public class IterativeTest {
     public void givenNumberisIteratedfornNumberofTimesAndPrintsEachNumbernNumberofTimes()
     {
         //Add
-        String result = it.numberrepeat(3);
+        String result = iterative.numberrepeat(3);
         //Assert
         assertEquals("122333", result);
     }
@@ -28,7 +28,7 @@ public class IterativeTest {
     public void givenNumberisIteratedfornegativeNumberofTimesAndPrintsEachNumbernNumberofTimes()
     {
         //Add
-        String result = it.numberrepeat(-1);
+        String result = iterative.numberrepeat(-1);
         //Assert
         assertEquals("Entered negative number", result);
     }
@@ -36,7 +36,7 @@ public class IterativeTest {
     public void givenNumberisIteratedfor0NumberofTimesAndPrintsEachNumbernNumberofTimes()
     {
         //Add
-        String result = it.numberrepeat(0);
+        String result = iterative.numberrepeat(0);
         //Assert
         assertEquals("Entered zero", result);
     }

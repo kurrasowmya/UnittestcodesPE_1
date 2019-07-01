@@ -6,22 +6,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TomJerryTest {
-    TomJerry tm = new TomJerry();
+    TomJerry jerrytom;
 
     @Before
     public void setUp() throws Exception {
-        tm=new TomJerry();
+        jerrytom=new TomJerry();
     }
 
     @After
     public void tearDown() throws Exception {
-        tm=null;
+        jerrytom=null;
     }
     @Test
     public void givenNumberisCheckedforEvenBetween20And30ThenPrintsJerry()
     {
         //Add
-        String result = tm.evenoddcheck(22);
+        String result = jerrytom.evenoddcheck(22);
         //Assert
         assertEquals("Jerry", result);
     }
@@ -29,7 +29,7 @@ public class TomJerryTest {
     public void givenNumberIsCheckedForOddBetween20And30ThenPrintsTom()
     {
         //Add
-        String result = tm.evenoddcheck(27);
+        String result = jerrytom.evenoddcheck(27);
         //Assert
         assertEquals("Tom", result);
     }
@@ -37,7 +37,7 @@ public class TomJerryTest {
     public void givenNumberOutOfRangeShouldReturnsError()
     {
         //Add
-        String result = tm.evenoddcheck(67);
+        String result = jerrytom.evenoddcheck(67);
         //Assert
         assertEquals("error", result);
     }

@@ -6,21 +6,23 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IntegeradditionTest {
-    Integeraddition ia=new Integeraddition();
+public class IntegerAdditionTest {
+    IntegerAddition obj;
 
     @Before
     public void setUp() throws Exception {
+        obj=new IntegerAddition();
     }
 
     @After
     public void tearDown() throws Exception {
+        obj=null;
     }
     @Test
     public void givennumberisTakenAsArraySizeAndprintsAddedElemenetsInTheArray()
     {
         //Add
-        int result = ia.integersum(3,new int[] {11,25,3});
+        int result = obj.integersum(3,new int[] {11,25,3});
         //Assert
         assertEquals(39,result);
     }
@@ -28,7 +30,7 @@ public class IntegeradditionTest {
     public void givenArrayWithAlphabetistakenAndPrintIntegervalueBytakingAlphabetAsciiValue()
     {
         //Add
-        int result = ia.integersum(3,new int[] {'A' ,20,3});
+        int result = obj.integersum(3,new int[] {'A' ,20,3});
         //Assert
         assertEquals(88,result);
     }
@@ -36,7 +38,7 @@ public class IntegeradditionTest {
     public void givenArrayWithdigitandSpecialCharistakenAndPrintIntegervalueBytakingAlphabetAsciiValue()
     {
         //Add
-        int result = ia.integersum(3,new int[] {'@' ,'#',3});
+        int result = obj.integersum(3,new int[] {'@' ,'#',3});
         //Assert
         assertEquals(102,result);
     }

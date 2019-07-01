@@ -6,24 +6,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CharactercheckTest {
+public class CharacterCheckTest {
     //arrange
-    Charactercheck app=new Charactercheck();
+    CharacterCheck obj;
     @Before
     public void setUp() throws Exception
     {
-        System.out.println("Before");
+        obj=new CharacterCheck();
     }
     @After
     public void tearDown() throws Exception
     {
-        System.out.println("After");
+        obj=null;
     }
     @Test
     public void givenCharacterisCheckedforDigitAndPrintsDigit()
     {
         //Add
-        String result= app.charcheck('7');
+        String result= obj.charcheck('7');
         //Assert
         assertEquals("Digit",result);
 
@@ -32,7 +32,7 @@ public class CharactercheckTest {
     public void givenCharacterisCheckedForUpperCaseAlphabetAndPrintsUpperCase()
     {
         //Add
-        String result= app.charcheck('A');
+        String result= obj.charcheck('A');
         //Assert
         assertEquals("Upper Case",result);
 
@@ -41,7 +41,7 @@ public class CharactercheckTest {
     public void givenCharacterisCheckedForLowerCaseAlphabet()
     {
         //Add
-        String result= app.charcheck('a');
+        String result= obj.charcheck('a');
         //Assert
         assertEquals("Lower Case",result);
 
@@ -50,7 +50,7 @@ public class CharactercheckTest {
     public void givenCharacterisCheckedForSpecialCharacterAndPrintsSpecialCharacter()
     {
         //Add
-        String result= app.charcheck('#');
+        String result= obj.charcheck('#');
         //Assert
         assertEquals("Special Character",result);
 

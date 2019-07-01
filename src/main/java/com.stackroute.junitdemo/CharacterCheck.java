@@ -1,6 +1,6 @@
 package com.stackroute.junitdemo;
 
-public class Charactercheck
+public class CharacterCheck
 {
     public String charcheck(char m)
     {

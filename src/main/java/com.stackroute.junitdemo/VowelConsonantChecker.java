@@ -1,16 +1,16 @@
 package com.stackroute.junitdemo;
-public class VowelConsonant
+public class VowelConsonantChecker
 {
     public String consonantvowelcheck(String inputString) {
         int i;
         String outputstring="";
         //check each and every character in the string
         for (i = 0; i < inputString.length(); i++) {
-            char c = inputString.charAt(i);
-            if((c>=65&&c<=96)||(c>=97&&c<=122))
+            char character= inputString.charAt(i);
+            if((character>=65&&character<=96)||(character>=97&&character<=122))
             {
                 //if condition for vowel check
-                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+                if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || character== 'u' || character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U')
                 {
                     outputstring = outputstring + "Vowel";
                 }

@@ -7,22 +7,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StringReverseTest {
+    StringReverse reversestring;
     @Before
     public void setUp() throws Exception {
-        System.out.println("Before");
+        reversestring=new StringReverse();
+
     }
 
     @After
     public void tearDown() throws Exception {
-        System.out.println("After");
+        reversestring=null;
     }
     @Test
     public void givenStringShouldBeReversedAndPrintsreverserString()
     {
-        //arrange
-        StringReverse app=new StringReverse();
         //Add
-        String result= app.ReverseofString("Hi");
+        String result= reversestring.ReverseofString("Hi");
         //Assert
         assertEquals("iH",result);
 
@@ -30,10 +30,9 @@ public class StringReverseTest {
     @Test
     public void givenStringWithSpacesShouldBeReversedAndPrintsReverseStringWithSpace()
     {
-        //arrange
-        StringReverse app=new StringReverse();
+
         //Add
-        String result= app.ReverseofString("Hello World");
+        String result= reversestring.ReverseofString("Hello World");
         //Assert
         assertEquals("dlroW olleH",result);
 
@@ -41,10 +40,9 @@ public class StringReverseTest {
     @Test
     public void givenStringWithOtherThanAlphabetsShouldBeReversedandPrintsItReverseString()
     {
-        //arrange
-        StringReverse app=new StringReverse();
+
         //Add
-        String result= app.ReverseofString("$%637#!");
+        String result= reversestring.ReverseofString("$%637#!");
         //Assert
         assertEquals("!#736%$",result);
 
@@ -52,10 +50,9 @@ public class StringReverseTest {
     @Test
     public void givenAlphaNumericStringShouldBeReversedAnDReversedStringIsprinted()
     {
-        //arrange
-        StringReverse app=new StringReverse();
+
         //Add
-        String result= app.ReverseofString("h65rf43S6");
+        String result= reversestring.ReverseofString("h65rf43S6");
         //Assert
         assertEquals("6S34fr56h",result);
 

@@ -9,10 +9,11 @@ import java.util.Arrays;
 import static org.junit.Assert.*;
 
 public class SortingTest {
-    Sorting st=new Sorting();
+    Sorting sortingstring;
 
     @Before
     public void setUp() throws Exception {
+        sortingstring=new Sorting();
     }
 
     @After
@@ -22,7 +23,7 @@ public class SortingTest {
     public void givenIntegerNumberIssplitedAndNumberIsReversedCalculatingEvenSumAndPrintsReverseNumberAndEvensum()
     {
         //Add
-        int[] result = st.sumdecreasingnumbers(234534);
+        int[] result = sortingstring.sumdecreasingnumbers(234534);
         //Assert
         assertEquals("[544332, 10]", Arrays.toString(result));
     }
@@ -30,7 +31,7 @@ public class SortingTest {
     public void givenIntegerNumberIszeroAndPrintsReverseNumberAndEvensum()
     {
         //Add
-        int[] result = st.sumdecreasingnumbers(0);
+        int[] result = sortingstring.sumdecreasingnumbers(0);
         //Assert
         assertEquals("[0, 0]", Arrays.toString(result));
     }
@@ -38,7 +39,7 @@ public class SortingTest {
     public void givenIntegerNumberIssplitedReversedCalculatingEvenSumAndPrintsReverseNumberAndEvensum()
     {
         //Add
-        int[] result = st.sumdecreasingnumbers(-563434);
+        int[] result = sortingstring.sumdecreasingnumbers(-563434);
         //Assert
         assertEquals("[0, 0]", Arrays.toString(result));
     }

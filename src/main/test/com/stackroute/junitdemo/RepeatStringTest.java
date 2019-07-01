@@ -7,20 +7,23 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class RepeatStringTest {
-    RepeatString rs=new RepeatString();
+    RepeatString repeatstring;
 
     @Before
     public void setUp() throws Exception {
+        repeatstring=new RepeatString();
+
     }
 
     @After
     public void tearDown() throws Exception {
+        repeatstring=null;
     }
     @Test
     public void givenStringistakenandTheLastnCharacterArePrintednNumberOfTimes()
     {
         //Add
-        String result = rs.Repeatsubstring("Stackroute",2);
+        String result = repeatstring.Repeatsubstring("Stackroute",2);
         //Assert
         assertEquals("Stackroutetete", result);
     }
@@ -28,7 +31,7 @@ public class RepeatStringTest {
     public void givenStringisTakenandThenisGivenOutOfBoundThenitPrintsErrorMessage()
     {
         //Add
-        String result = rs.Repeatsubstring("Stackroute",11);
+        String result = repeatstring.Repeatsubstring("Stackroute",11);
         //Assert
         assertEquals("Out Of Bound", result);
     }
@@ -36,7 +39,7 @@ public class RepeatStringTest {
     public void givenStringisTakenandThenRepeated0TimesAndprintsThesameString()
     {
         //Add
-        String result = rs.Repeatsubstring("Stackroute",0);
+        String result = repeatstring.Repeatsubstring("Stackroute",0);
         //Assert
         assertEquals("Stackroute", result);
     }

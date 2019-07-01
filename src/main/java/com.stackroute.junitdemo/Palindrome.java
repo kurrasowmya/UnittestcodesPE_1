@@ -2,20 +2,20 @@ package com.stackroute.junitdemo;
 
 public class Palindrome
 {
-    public String palindromeandgreater(long num)
+    public String palindromeandgreater(long number)
     {
         long a,temp,sum=0,evensum=0;
-        temp=num;
-        while(num!=0)
+        temp=number;
+        while(number!=0)
         {
-            a=num%10;
+            a=number%10;
             //digit is checked for even number to get evensum
             if(a%2==0)
             {
                 evensum=evensum+a;
             }
             sum=sum*10+a;
-            num=num/10;
+            number=number/10;
         }
         //if-else to compare the original number with reversed number
         if(sum==temp)

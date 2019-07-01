@@ -5,24 +5,24 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class VowelConsonantTest
+public class VowelConsonantCheckerTest
 {
     //arrange
-    VowelConsonant app=new VowelConsonant();
+    VowelConsonantChecker vowelconsonant=new VowelConsonantChecker();
     @Before
     public void setUp() throws Exception
     {
-        System.out.println("Before");
+        vowelconsonant=new VowelConsonantChecker();
     }
     @After
     public void tearDown() throws Exception {
-        System.out.println("After");
+        vowelconsonant=null;
     }
     @Test
     public void givenStringinlowercaseisCheckedAndPrintVowelAreConsonant()
     {
         //Add
-        String result= app.consonantvowelcheck("abce");
+        String result= vowelconsonant.consonantvowelcheck("abce");
         //Assert
         assertEquals("VowelConsonantConsonantVowel",result);
 
@@ -31,7 +31,7 @@ public class VowelConsonantTest
     public void givenStringinUppercaseisCheckedAndPrintVowelAreConsonant()
     {
         //Add
-        String result= app.consonantvowelcheck("ABCE");
+        String result= vowelconsonant.consonantvowelcheck("ABCE");
         //Assert
         assertEquals("VowelConsonantConsonantVowel",result);
 
@@ -40,7 +40,7 @@ public class VowelConsonantTest
     public void givenStringContainsNonAlphabetvalueAndReturnsErrorMessages()
     {
         //Add
-        String result= app.consonantvowelcheck("7-e");
+        String result= vowelconsonant.consonantvowelcheck("7-e");
         //Assert
         assertEquals("NotanAlphabetNotanAlphabetVowel",result);
 
