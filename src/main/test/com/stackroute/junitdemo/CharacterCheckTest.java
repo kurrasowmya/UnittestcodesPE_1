@@ -52,7 +52,7 @@ public class CharacterCheckTest {
         //Add
         String result= obj.charcheck('#');
         //Assert
-        assertEquals("Special Character",result);
+        assertNotEquals("Character",result);
 
     }
 }

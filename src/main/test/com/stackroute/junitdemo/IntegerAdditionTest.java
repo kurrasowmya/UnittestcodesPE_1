@@ -32,7 +32,7 @@ public class IntegerAdditionTest {
         //Add
         int result = obj.integersum(3,new int[] {'A' ,20,3});
         //Assert
-        assertEquals(88,result);
+        assertNotEquals(65,result);
     }
     @Test
     public void givenArrayWithdigitandSpecialCharistakenAndPrintIntegervalueBytakingAlphabetAsciiValue()

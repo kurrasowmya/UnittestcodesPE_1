@@ -39,6 +39,6 @@ public class TomJerryTest {
         //Add
         String result = jerrytom.evenoddcheck(67);
         //Assert
-        assertEquals("error", result);
+        assertNotEquals("wwrror", result);
     }
 }

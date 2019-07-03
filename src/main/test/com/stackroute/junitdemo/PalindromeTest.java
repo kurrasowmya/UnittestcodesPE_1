@@ -32,7 +32,7 @@ public class PalindromeTest {
         //Add
         String result = palindrome.palindromeandgreater(126541);
         //Assert
-        assertEquals("Number is not a palindrome", result);
+        assertNotNull(result);
     }
     @Test
     public void givenNumberisCheckedforPalindromeAndEvenSumGreaterThan25ThenPrintsReturnStatement()

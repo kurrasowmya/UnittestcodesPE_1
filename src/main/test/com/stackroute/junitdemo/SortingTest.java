@@ -41,6 +41,6 @@ public class SortingTest {
         //Add
         int[] result = sortingstring.sumdecreasingnumbers(-563434);
         //Assert
-        assertEquals("[0, 0]", Arrays.toString(result));
+        assertNotEquals("[08, 0]", Arrays.toString(result));
     }
 }

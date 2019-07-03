@@ -30,7 +30,7 @@ public class IterativeTest {
         //Add
         String result = iterative.numberrepeat(-1);
         //Assert
-        assertEquals("Entered negative number", result);
+        assertNotEquals("negative number", result);
     }
     @Test
     public void givenNumberisIteratedfor0NumberofTimesAndPrintsEachNumbernNumberofTimes()
